@@ -142,7 +142,7 @@ export default function ContactForm() {
               <option value="">Betreff *</option>
               <option value="neues-projekt">Individuelles Baukasten-Modell anfragen</option>
               <option value="sonderedition">Limitierte Firmen-Edition</option>
-              <option value="beratung">Architektur- & Modellberatung</option>
+              <option value="beratung">Individuelle Modell- & Set-Beratung</option>
               <option value="sonstiges">Sonstiges Anliegen</option>
             </select>
           </div>

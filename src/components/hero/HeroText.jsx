@@ -95,7 +95,7 @@ const HeroText = forwardRef(function HeroText(_props, ref) {
       <div ref={finalRef} className="hero-text-block hero-text-block--final">
         <div className="hero-eyebrow">
           <span className="eyebrow-rule" aria-hidden="true" />
-          <span className="eyebrow-text">FERTIGES ARCHITEKTUR-MODELL</span>
+          <span className="eyebrow-text">KLEMMBAUSTEINE INDIVIDUELL NACH WUNSCH</span>
         </div>
 
         <h2 className="hero-headline">
@@ -131,7 +131,7 @@ const HeroText = forwardRef(function HeroText(_props, ref) {
         </div>
         <div className="scroll-label-group">
           <span className="scroll-arrow scroll-arrow--up">⌃</span>
-          <span className="scroll-text">SCROLL TO EXPLORE</span>
+          <span className="scroll-text">SCROLLEN ZUM ENTDECKEN</span>
           <span className="scroll-arrow scroll-arrow--down">⌄</span>
         </div>
       </div>

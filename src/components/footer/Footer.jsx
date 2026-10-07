@@ -71,7 +71,7 @@ export default function Footer() {
             <div className="footer-col footer-col-brand">
               <div className="footer-brand-header">
                 <span className="footer-brand-wordmark">Clemmo<sup>®</sup></span>
-                <span className="footer-brand-tagline">Custom Building Solutions for Brands</span>
+                <span className="footer-brand-tagline">Klemmbausteine individuell nach Wunsch</span>
               </div>
               <p className="footer-brand-desc">
                 Wir entwickeln und produzieren individuelle Baustein-Sets für Unternehmen, 

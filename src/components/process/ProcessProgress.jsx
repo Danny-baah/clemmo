@@ -63,7 +63,8 @@ export default function ProcessProgress({
               aria-current={isActive ? 'step' : undefined}
             >
               <span className="progress-badge">{step.id}</span>
-              <span className="progress-label">{step.shortLabel}</span>
+              <span className="progress-label progress-label--desktop">{step.shortLabel}</span>
+              <span className="progress-label progress-label--mobile">{step.mobileLabel || step.shortLabel}</span>
             </button>
           );
         })}

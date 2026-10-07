@@ -84,7 +84,7 @@ export default function Products() {
       title: 'Individuelle Sets',
       description: 'Maßgeschneiderte Designs nach Ihren Vorstellungen – einzigartig und markengerecht.',
       image: './products/product_custom.jpg',
-      alt: 'Maßgeschneiderte Clemmo HP Architektur- und Markenmodelle aus Klemmbausteinen',
+      alt: 'Maßgeschneiderte Clemmo Marken- und Sonderbau-Modelle aus Klemmbausteinen',
       points: [
         {
           text: 'Eigene Designs und Markenwelten',

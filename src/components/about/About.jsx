@@ -141,13 +141,13 @@ export default function About() {
             <div className="about-image-card">
               <img
                 src="./about/about_model.jpg"
-                alt="Clemmo HP Maßgeschneidertes Architekturmodell aus Klemmbausteinen"
+                alt="Clemmo Maßgeschneidertes Modell aus Klemmbausteinen"
                 className="about-model-image"
                 loading="lazy"
               />
               <div className="about-image-badge" aria-hidden="true">
                 <span className="badge-dot" />
-                <span>ORIGINAL CLEMMO HP MODELL</span>
+                <span>ORIGINAL CLEMMO MODELL</span>
               </div>
             </div>
           </div>

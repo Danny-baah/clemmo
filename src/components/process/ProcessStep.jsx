@@ -8,18 +8,20 @@ export const PROCESS_STEPS = [
   {
     id: '01',
     shortLabel: 'IDEE & KONZEPT',
+    mobileLabel: 'KONZEPT',
     fullLabel: '01 · IDEE & KONZEPT',
     title: 'Idee & Konzept',
     headline: 'Aus einer Idee entsteht ein klares Konzept.',
     description:
       'Wir besprechen Ihre Anforderungen, Ziele und Vorstellungen und entwickeln darauf basierend ein maßgeschneidertes Konzept für Ihr individuelles Set.',
     imageSrc: '/process/step1_concept.jpg',
-    imageAlt: 'Clemmo HP Konzept- und Architektur-Skizzen auf Studiotisch mit Bausteinen',
+    imageAlt: 'Clemmo Modell- und Set-Skizzen auf Studiotisch mit Bausteinen',
     badge: 'KONZEPT & SKIZZE',
   },
   {
     id: '02',
     shortLabel: 'DESIGN & ENTWICKLUNG',
+    mobileLabel: 'DESIGN',
     fullLabel: '02 · DESIGN & ENTWICKLUNG',
     title: 'Design & Entwicklung',
     headline: 'Aus dem Konzept wird ein präzises Modell.',
@@ -32,6 +34,7 @@ export const PROCESS_STEPS = [
   {
     id: '03',
     shortLabel: 'PRODUKTION',
+    mobileLabel: 'PRODUKTION',
     fullLabel: '03 · PRODUKTION',
     title: 'Produktion',
     headline: 'Ihre Idee geht in die Fertigung.',
@@ -44,13 +47,14 @@ export const PROCESS_STEPS = [
   {
     id: '04',
     shortLabel: 'LIEFERUNG & SUPPORT',
+    mobileLabel: 'LIEFERUNG',
     fullLabel: '04 · LIEFERUNG & SUPPORT',
     title: 'Lieferung & Support',
     headline: 'Das fertige Set kommt an – zuverlässig und termingerecht.',
     description:
       'Ihr individuelles Set wird weltweit geliefert. Wir unterstützen Sie auch nach der Lieferung und stehen bei weiteren Projekten jederzeit gerne zur Seite.',
     imageSrc: '/process/step4_delivery.jpg',
-    imageAlt: 'Vollendetes Clemmo HP Modell mit edler Markenverpackung und weltweitem Logistikservice',
+    imageAlt: 'Vollendetes Clemmo Modell mit edler Markenverpackung und weltweitem Logistikservice',
     badge: 'FERTIGES SET & LOGISTIK',
   },
 ];
