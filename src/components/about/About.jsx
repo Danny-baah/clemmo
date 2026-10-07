@@ -64,7 +64,7 @@ export default function About() {
   ];
 
   return (
-    <section id="ueber-uns" className="about-section" aria-label="Über Clemmo HP">
+    <section id="ueber-uns" className="about-section" aria-label="Über Clemmo">
       {/* Subtle organic curved transition edge overlapping the hero */}
       <div className="about-curved-boundary" aria-hidden="true">
         <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" className="about-curve-svg">
@@ -79,7 +79,7 @@ export default function About() {
           <div className="about-content-col">
             <div className="about-eyebrow">
               <span className="about-eyebrow-rule" aria-hidden="true" />
-              <span className="about-eyebrow-text">Über Clemmo HP</span>
+              <span className="about-eyebrow-text">ÜBER CLEMMO</span>
             </div>
 
             <h2 className="about-headline">
@@ -145,9 +145,9 @@ export default function About() {
                 className="about-model-image"
                 loading="lazy"
               />
-              <div className="about-image-badge" aria-hidden="true">
+              <div className="ai-image-badge" aria-hidden="true">
                 <span className="badge-dot" />
-                <span>MAẞGESCHNEIDERTES CLEMMO MODELL</span>
+                <span>KI-generiertes Bild</span>
               </div>
             </div>
           </div>
@@ -172,6 +172,10 @@ export default function About() {
                     className="capability-thumbnail"
                     loading="lazy"
                   />
+                  <div className="ai-image-badge" aria-hidden="true">
+                    <span className="badge-dot" />
+                    <span>KI-generiertes Bild</span>
+                  </div>
                 </div>
               </div>
             ))}

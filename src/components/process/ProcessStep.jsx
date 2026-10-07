@@ -16,7 +16,7 @@ export const PROCESS_STEPS = [
       'Wir besprechen Ihre Anforderungen, Ziele und Vorstellungen und entwickeln darauf basierend ein maßgeschneidertes Konzept für Ihr individuelles Set.',
     imageSrc: '/process/step1_concept.jpg',
     imageAlt: 'Clemmo Modell- und Set-Skizzen auf Studiotisch mit Bausteinen',
-    badge: 'KONZEPT & SKIZZE',
+    badge: 'KI-generiertes Bild',
   },
   {
     id: '02',
@@ -29,7 +29,7 @@ export const PROCESS_STEPS = [
       'Unsere Designer entwickeln detaillierte Modelle und Konstruktionspläne – präzise, markengerecht und mit Blick auf Funktion, Ästhetik und Umsetzbarkeit.',
     imageSrc: '/process/step2_design.jpg',
     imageAlt: 'Maßgeschneidertes Baukastenmodell mit digitalem 3D-CAD-Entwurf im Hintergrund',
-    badge: '3D-CAD & MODELLBAU',
+    badge: 'KI-generiertes Bild',
   },
   {
     id: '03',
@@ -42,7 +42,7 @@ export const PROCESS_STEPS = [
       'Wir koordinieren die Produktion mit ausgewählten Partnern und achten auf höchste Qualitätsstandards, damit Ihr Set exakt nach Ihren Vorgaben umgesetzt wird.',
     imageSrc: '/process/step3_production.jpg',
     imageAlt: 'Präzisionsgefertigte Baukastenkomponenten und optische Qualitätskontrolle in Reinraum-Fertigung',
-    badge: 'PRÄZISIONSFERTIGUNG',
+    badge: 'KI-generiertes Bild',
   },
   {
     id: '04',
@@ -55,7 +55,7 @@ export const PROCESS_STEPS = [
       'Ihr individuelles Set wird weltweit geliefert. Wir unterstützen Sie auch nach der Lieferung und stehen bei weiteren Projekten jederzeit gerne zur Seite.',
     imageSrc: '/process/step4_delivery.jpg',
     imageAlt: 'Vollendetes Clemmo Modell mit edler Markenverpackung und weltweitem Logistikservice',
-    badge: 'FERTIGES SET & LOGISTIK',
+    badge: 'KI-generiertes Bild',
   },
 ];
 

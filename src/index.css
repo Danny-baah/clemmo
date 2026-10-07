@@ -90,3 +90,56 @@ button:focus-visible {
   outline: 2px solid var(--color-text-main);
   outline-offset: 4px;
 }
+
+/* ==========================================================================
+   AI DISCLOSURE BADGE ("KI-generiertes Bild")
+   Matches exact pill style: dark frosted background with mint accent dot.
+   ========================================================================== */
+.ai-image-badge {
+  position: absolute;
+  bottom: 1.15rem;
+  right: 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: rgba(13, 23, 21, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  border: 1px solid rgba(87, 120, 119, 0.35);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.ai-image-badge .badge-dot,
+.badge-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #5ce6b0;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #5ce6b0;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .ai-image-badge {
+    bottom: 0.75rem;
+    right: 0.75rem;
+    font-size: 0.64rem;
+    padding: 0.36rem 0.78rem;
+    gap: 0.45rem;
+  }
+
+  .ai-image-badge .badge-dot,
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+  }
+}

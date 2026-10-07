@@ -350,6 +350,7 @@
 }
 
 .contact-building-image-wrap {
+  position: relative;
   width: 100%;
   flex: 1; /* Automatically expands to match form height */
   min-height: 220px;

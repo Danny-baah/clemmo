@@ -40,7 +40,7 @@ export default function GermanyMap() {
           fontFamily="system-ui, -apple-system, sans-serif"
           letterSpacing="0.02em"
         >
-          Clemmo HP
+          Clemmo
         </text>
       </svg>
     </div>

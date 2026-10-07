@@ -11,11 +11,15 @@ export default function ContactInfo() {
       <div className="contact-building-image-wrap">
         <img
           src="/contact/contact_headquarters.jpg"
-          alt="Clemmo HP Unternehmenssitz und Entwicklungsstudio"
+          alt="Clemmo Unternehmenssitz und Entwicklungsstudio"
           className="contact-building-image"
           loading="lazy"
           decoding="async"
         />
+        <div className="ai-image-badge" aria-hidden="true">
+          <span className="badge-dot" />
+          <span>KI-generiertes Bild</span>
+        </div>
       </div>
 
       {/* Bottom: 2-Column Direct Contact Information Block */}
@@ -31,7 +35,7 @@ export default function ContactInfo() {
           <div className="info-content">
             <span className="info-label">Adresse</span>
             <div className="info-value address-lines">
-              <strong>Clemmo HP</strong>
+              <strong>Clemmo</strong>
               <span>[Adresse]</span>
               <span>[PLZ Ort]</span>
               <span>Deutschland</span>

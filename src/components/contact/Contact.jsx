@@ -149,7 +149,7 @@ export default function Contact() {
               <div className="location-map-frame">
                 <img
                   src="/contact/contact_location_map.jpg"
-                  alt="Kartografische Lage des Clemmo HP Studios"
+                  alt="Kartografische Lage des Clemmo Studios"
                   className="location-map-image"
                   loading="lazy"
                   decoding="async"

@@ -52,11 +52,15 @@ export default function Footer() {
           <div className="footer-cta-media">
             <img
               src="/footer/footer_cta_model.jpg"
-              alt="Architektonisches Baukastenmodell eines modernen Firmengebäudes bei Nacht"
+              alt="Baukastenmodell eines modernen Firmengebäudes bei Nacht"
               className="footer-cta-img"
               loading="lazy"
               decoding="async"
             />
+            <div className="ai-image-badge" aria-hidden="true">
+              <span className="badge-dot" />
+              <span>KI-generiertes Bild</span>
+            </div>
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@ export default function Products() {
       title: 'Kleine Sets',
       description: 'Kompakte Sets, ideal für Promotions, Give-aways und Markenpräsenz.',
       image: './products/product_small.jpg',
-      alt: 'Kompakte Clemmo HP Klemmbaustein-Sets für Give-aways und Promotions',
+      alt: 'Kompakte Clemmo Klemmbaustein-Sets für Give-aways und Promotions',
       points: [
         {
           text: 'Ideal für Marketing & Events',

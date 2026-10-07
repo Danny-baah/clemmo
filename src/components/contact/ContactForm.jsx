@@ -67,7 +67,7 @@ export default function ContactForm() {
           </div>
           <h4 className="success-title">Vielen Dank für Ihre Nachricht!</h4>
           <p className="success-description">
-            Wir haben Ihre Anfrage erhalten. Ein Berater von Clemmo HP wird sich schnellstmöglich bei Ihnen melden.
+            Wir haben Ihre Anfrage erhalten. Ein Berater von Clemmo wird sich schnellstmöglich bei Ihnen melden.
           </p>
           <button
             type="button"
