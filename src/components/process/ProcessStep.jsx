@@ -111,10 +111,12 @@ export function ProcessStepVisual({ step, style, isActive, innerRef }) {
         loading="eager"
         decoding="async"
       />
-      <div className="image-badge-with-ai visual-badge" aria-hidden="true">
+      <div className="ai-subtle-tag" aria-hidden="true">
+        <span>KI-generiert</span>
+      </div>
+      <div className="visual-badge" aria-hidden="true">
         <span className="badge-dot" />
-        <span className="badge-main-text">{step.badge}</span>
-        <span className="badge-ai-notice">KI-generiert</span>
+        <span>{step.badge}</span>
       </div>
     </div>
   );

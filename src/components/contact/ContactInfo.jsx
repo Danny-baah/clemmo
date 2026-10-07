@@ -16,7 +16,7 @@ export default function ContactInfo() {
           loading="lazy"
           decoding="async"
         />
-        <div className="ai-discreet-badge" aria-hidden="true">
+        <div className="ai-subtle-tag" aria-hidden="true">
           <span>KI-generiert</span>
         </div>
       </div>
