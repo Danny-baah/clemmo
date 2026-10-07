@@ -1,0 +1,464 @@
+/* ==========================================================================
+   CLEMMO HP - QUALITY SECTION ("QUALITÄT") STYLES
+   ========================================================================== */
+
+/* Main Quality Section Container (Normal Document Scroll) */
+.quality-section {
+  /* Isolated Section Variables */
+  --quality-bg: #F3F0E9;
+  --quality-grid-minor: rgba(22, 38, 35, 0.035); /* ~3.5% opacity architectural drafting line */
+  --quality-grid-major: rgba(22, 38, 35, 0.055); /* ~5.5% opacity architectural coordinate line */
+
+  position: relative;
+  width: 100%;
+  background-color: var(--quality-bg);
+  /* Architectural Blueprint Paper Treatment (faint technical drafting lines) */
+  background-image: 
+    /* Major architectural module lines (160px) */
+    linear-gradient(to right, var(--quality-grid-major) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--quality-grid-major) 1px, transparent 1px),
+    /* Minor technical drafting grid (32px) */
+    linear-gradient(to right, var(--quality-grid-minor) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--quality-grid-minor) 1px, transparent 1px);
+  background-size: 
+    160px 160px,
+    160px 160px,
+    32px 32px,
+    32px 32px;
+  background-position: center top;
+  border-top: 1px solid rgba(22, 38, 35, 0.07);
+  color: var(--color-bg); /* #162623 */
+  padding: 8rem 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.quality-inner {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4.5rem;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------
+   TWO-COLUMN MAIN GRID LAYOUT
+   -------------------------------------------------------------------------- */
+.quality-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 4.5rem;
+  align-items: stretch;
+}
+
+/* Left Column: Introduction, Principles & Feature Panel */
+.quality-content-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header Area */
+.quality-header-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.quality-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.quality-eyebrow-rule {
+  width: 30px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+.quality-eyebrow-text {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-family: var(--font-primary);
+}
+
+.quality-headline {
+  font-size: clamp(2.3rem, 3.4vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--color-bg);
+  line-height: 1.12;
+  margin-bottom: 1.25rem;
+}
+
+.quality-description {
+  font-size: 1.04rem;
+  line-height: 1.65;
+  color: #3b5452;
+  max-width: 580px;
+  font-weight: 400;
+}
+
+/* --------------------------------------------------------------------------
+   FOUR QUALITY PRINCIPLES (EDITORIAL GRID)
+   -------------------------------------------------------------------------- */
+.quality-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  margin-bottom: 3.5rem;
+  padding-top: 1rem;
+}
+
+.quality-principle-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s var(--ease-cinematic), transform 0.6s var(--ease-cinematic);
+  transition-delay: calc(var(--principle-index, 0) * 0.1s + 0.15s);
+}
+
+.quality-section.is-visible .quality-principle-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quality-principle-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.quality-principle-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid rgba(87, 120, 119, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+
+.quality-principle-item:hover .quality-principle-icon-wrap {
+  border-color: var(--color-accent);
+  color: var(--color-accent-hover);
+}
+
+.quality-principle-svg {
+  width: 22px;
+  height: 22px;
+}
+
+.quality-principle-title {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-bg);
+  line-height: 1.25;
+  font-family: var(--font-primary);
+  min-height: 2.2em;
+}
+
+.quality-principle-desc {
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: #4b6664;
+  font-weight: 400;
+}
+
+/* --------------------------------------------------------------------------
+   LOWER DARK FEATURE PANEL (BACKGROUND: #162623)
+   -------------------------------------------------------------------------- */
+.quality-feature-panel {
+  background-color: var(--color-bg); /* #162623 */
+  border-radius: 16px;
+  border: 1px solid rgba(87, 120, 119, 0.35);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  overflow: hidden;
+  position: relative;
+  color: var(--color-text-main);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s var(--ease-cinematic) 0.3s, transform 0.7s var(--ease-cinematic) 0.3s;
+}
+
+.quality-section.is-visible .quality-feature-panel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-panel-content {
+  padding: 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.4rem;
+}
+
+.feature-panel-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.feature-panel-eyebrow {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-family: var(--font-primary);
+}
+
+.feature-panel-headline {
+  font-size: clamp(1.45rem, 1.9vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+}
+
+.feature-panel-highlight {
+  color: #4ebcb8;
+  font-weight: 800;
+}
+
+.feature-panel-subtext {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--color-text-subtle);
+  max-width: 380px;
+}
+
+.feature-panel-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border: 1px solid rgba(87, 120, 119, 0.45);
+  width: fit-content;
+  transition: all 0.25s var(--ease-smooth);
+}
+
+.feature-panel-cta:hover {
+  background-color: var(--color-accent-hover);
+  border-color: rgba(240, 245, 247, 0.5);
+  transform: translateY(-2px);
+}
+
+.feature-panel-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.feature-panel-cta:hover .feature-panel-arrow {
+  transform: translateX(4px);
+}
+
+/* Feature Panel Macro Visual */
+.feature-panel-visual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  overflow: hidden;
+  background-color: #0d1715;
+}
+
+.feature-panel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.feature-panel-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #162623 0%, rgba(22, 38, 35, 0.4) 25%, transparent 60%);
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   RIGHT COLUMN: MAIN ARCHITECTURAL MODEL VISUAL
+   -------------------------------------------------------------------------- */
+.quality-visual-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(87, 120, 119, 0.25);
+  background-color: #e5ecef;
+  box-sizing: border-box;
+}
+
+.quality-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+  transition: transform 1.2s var(--ease-cinematic);
+}
+
+.quality-section.is-visible .quality-main-img {
+  transform: scale(1);
+}
+
+/* Quality Studio Badge */
+.quality-visual-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: rgba(22, 38, 35, 0.88);
+  backdrop-filter: blur(8px);
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 10;
+}
+
+.badge-dot-green {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #5ce6b0;
+}
+
+/* --------------------------------------------------------------------------
+   ENTRANCE TRANSITIONS (SUBTLE VIEWPORT REVEAL)
+   -------------------------------------------------------------------------- */
+.quality-header-wrap {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--ease-cinematic), transform 0.6s var(--ease-cinematic);
+}
+
+.quality-section.is-visible .quality-header-wrap {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE BREAKPOINTS
+   -------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  .quality-inner {
+    padding: 0 3rem;
+  }
+  .quality-grid {
+    gap: 3rem;
+  }
+  .quality-principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .quality-section {
+    padding: 5.5rem 0;
+  }
+  .quality-inner {
+    padding: 0 1.5rem;
+  }
+  .quality-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .quality-content-col {
+    display: contents;
+  }
+  .quality-header-wrap {
+    order: 1;
+  }
+  .quality-visual-container {
+    order: 2;
+    min-height: 360px;
+    height: 400px;
+  }
+  .quality-principles-grid {
+    order: 3;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .quality-feature-panel {
+    order: 4;
+    grid-template-columns: 1fr;
+  }
+  .feature-panel-visual {
+    min-height: 180px;
+    height: 180px;
+  }
+  .feature-panel-overlay {
+    background: linear-gradient(to top, #162623 0%, rgba(22, 38, 35, 0.4) 30%, transparent 60%);
+  }
+}
+
+@media (max-width: 640px) {
+  .quality-section {
+    padding: 4.5rem 0;
+  }
+  .quality-grid {
+    gap: 2rem;
+  }
+  .quality-principles-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .quality-headline {
+    font-size: 1.95rem;
+  }
+  .quality-description {
+    font-size: 0.95rem;
+  }
+  .feature-panel-content {
+    padding: 1.8rem 1.5rem;
+  }
+  .quality-visual-container {
+    min-height: 280px;
+    height: 320px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ACCESSIBILITY: PREFERS REDUCED MOTION
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .quality-header-wrap,
+  .quality-principle-item,
+  .quality-feature-panel,
+  .quality-main-img {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

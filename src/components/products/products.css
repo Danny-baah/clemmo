@@ -1,0 +1,492 @@
+/* ==========================================================================
+   CLEMMO HP - PRODUCTS SECTION ("UNSERE PRODUKTE") STYLES
+   ========================================================================== */
+
+.products-section {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-text-main); /* #F0F5F7 Soft light surface */
+  color: var(--color-bg); /* #162623 Deep dark green-black */
+  padding: 5.5rem 4.5rem 8.5rem;
+  overflow: hidden;
+}
+
+.products-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION HEADER (TOP ROW)
+   -------------------------------------------------------------------------- */
+.products-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.products-header-left {
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Eyebrow */
+.products-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.4rem;
+}
+
+.products-eyebrow-rule {
+  width: 32px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+.products-eyebrow-text {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-family: var(--font-primary);
+}
+
+/* Headline */
+.products-headline {
+  font-size: clamp(2.5rem, 4.4vw, 3.8rem);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-headline-dark {
+  color: var(--color-bg); /* #162623 */
+}
+
+.products-headline-accent {
+  color: var(--color-accent); /* #295255 */
+}
+
+/* Supporting text */
+.products-subtext {
+  font-size: clamp(1.05rem, 1.35vw, 1.22rem);
+  line-height: 1.6;
+  color: #3b5452;
+  font-weight: 400;
+  max-width: 760px;
+}
+
+/* Upper-right Outline CTA Button */
+.products-header-right {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.products-outline-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.8rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-text-muted); /* #577877 */
+  color: var(--color-bg); /* #162623 */
+  font-size: 0.94rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: transparent;
+  transition: all 0.28s var(--ease-smooth);
+  text-decoration: none;
+}
+
+.products-outline-cta:hover {
+  border-color: var(--color-accent); /* #295255 */
+  color: var(--color-accent);
+  background-color: rgba(41, 82, 85, 0.06);
+  transform: translateY(-1px);
+}
+
+.products-cta-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.products-outline-cta:hover .products-cta-arrow {
+  transform: translateX(4px);
+}
+
+/* --------------------------------------------------------------------------
+   THREE PRODUCT SHOWCASE CARDS (HORIZONTAL GRID)
+   -------------------------------------------------------------------------- */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* Base Product Card */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.35s var(--ease-smooth),
+              box-shadow 0.35s var(--ease-smooth),
+              border-color 0.35s var(--ease-smooth);
+  text-decoration: none;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Container */
+.product-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: #0d1715;
+}
+
+.product-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--ease-smooth);
+}
+
+.product-card:hover .product-card-img {
+  transform: scale(1.035);
+}
+
+/* Card Body */
+.product-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2.2rem 2.2rem 2.4rem;
+}
+
+.product-card-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.85rem;
+}
+
+.product-card-desc {
+  font-size: 0.94rem;
+  line-height: 1.55;
+  margin-bottom: 2rem;
+  min-height: 2.9rem;
+}
+
+/* Supporting points list */
+.product-card-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 2.8rem;
+  flex: 1;
+}
+
+.product-card-point {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.product-point-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Card Footer (CTA + Arrow) */
+.product-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(87, 120, 119, 0.18);
+  margin-top: auto;
+}
+
+.product-card-cta-label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.product-card-arrow-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s var(--ease-smooth),
+              background-color 0.25s ease,
+              border-color 0.25s ease,
+              color 0.25s ease;
+}
+
+.product-card:hover .product-card-arrow-circle {
+  transform: translateX(3px);
+}
+
+.product-arrow-svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover .product-arrow-svg {
+  transform: translateX(2px);
+}
+
+/* --------------------------------------------------------------------------
+   INDIVIDUAL CARD TREATMENTS (VISUAL DIFFERENTIATION)
+   -------------------------------------------------------------------------- */
+
+/* CARD 01: Light / Soft Treatment */
+.product-card--light {
+  background-color: #ffffff;
+  color: var(--color-bg);
+  border: 1px solid rgba(87, 120, 119, 0.2);
+  box-shadow: 0 16px 40px rgba(22, 38, 35, 0.06);
+}
+
+.product-card--light:hover {
+  border-color: rgba(41, 82, 85, 0.45);
+  box-shadow: 0 24px 50px rgba(22, 38, 35, 0.1);
+}
+
+.product-card--light .product-card-title {
+  color: var(--color-bg);
+}
+
+.product-card--light .product-card-desc {
+  color: #4b6664;
+}
+
+.product-card--light .product-card-point {
+  color: #2b3d3b;
+}
+
+.product-card--light .product-point-icon {
+  color: var(--color-accent);
+}
+
+.product-card--light .product-card-cta-label {
+  color: var(--color-bg);
+}
+
+.product-card--light .product-card-arrow-circle {
+  border: 1.5px solid rgba(87, 120, 119, 0.35);
+  background: transparent;
+  color: var(--color-bg);
+}
+
+.product-card--light:hover .product-card-arrow-circle {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #ffffff;
+}
+
+/* CARD 02: Deep Teal Treatment */
+.product-card--teal {
+  background-color: #1f3b3d; /* Rich deep teal */
+  color: #ffffff;
+  border: 1px solid rgba(240, 245, 247, 0.15);
+  box-shadow: 0 18px 45px rgba(22, 38, 35, 0.15);
+}
+
+.product-card--teal:hover {
+  border-color: rgba(240, 245, 247, 0.35);
+  box-shadow: 0 28px 60px rgba(22, 38, 35, 0.25);
+}
+
+.product-card--teal .product-card-title {
+  color: #ffffff;
+}
+
+.product-card--teal .product-card-desc {
+  color: #c9dbda;
+}
+
+.product-card--teal .product-card-point {
+  color: #e4efee;
+}
+
+.product-card--teal .product-point-icon {
+  color: #6ee7b7;
+}
+
+.product-card--teal .product-card-footer {
+  border-top-color: rgba(240, 245, 247, 0.15);
+}
+
+.product-card--teal .product-card-cta-label {
+  color: #ffffff;
+}
+
+.product-card--teal .product-card-arrow-circle {
+  background-color: var(--color-accent); /* #295255 */
+  border: 1px solid rgba(240, 245, 247, 0.25);
+  color: #ffffff;
+}
+
+.product-card--teal:hover .product-card-arrow-circle {
+  background-color: var(--color-accent-hover);
+  border-color: rgba(240, 245, 247, 0.6);
+}
+
+/* CARD 03: Deep Green-Black Treatment */
+.product-card--dark {
+  background-color: #121e1c; /* Deep green-black */
+  color: #ffffff;
+  border: 1px solid rgba(87, 120, 119, 0.25);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+.product-card--dark:hover {
+  border-color: rgba(87, 120, 119, 0.5);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.32);
+}
+
+.product-card--dark .product-card-title {
+  color: #ffffff;
+}
+
+.product-card--dark .product-card-desc {
+  color: #aebfb0;
+  color: #b0c2c0;
+}
+
+.product-card--dark .product-card-point {
+  color: #e1ebea;
+}
+
+.product-card--dark .product-point-icon {
+  color: var(--color-text-subtle);
+}
+
+.product-card--dark .product-card-footer {
+  border-top-color: rgba(87, 120, 119, 0.2);
+}
+
+.product-card--dark .product-card-cta-label {
+  color: #ffffff;
+}
+
+.product-card--dark .product-card-arrow-circle {
+  background-color: rgba(41, 82, 85, 0.35);
+  border: 1px solid rgba(87, 120, 119, 0.4);
+  color: #ffffff;
+}
+
+.product-card--dark:hover .product-card-arrow-circle {
+  background-color: var(--color-accent);
+  border-color: rgba(240, 245, 247, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   ENTRANCE ANIMATIONS (SUBTLE, RESPECTING REDUCED MOTION)
+   -------------------------------------------------------------------------- */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.08s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.16s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.24s;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE DESIGN
+   -------------------------------------------------------------------------- */
+@media (max-width: 1180px) {
+  .products-section {
+    padding: 4.5rem 3rem 6.5rem;
+  }
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .product-card:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-section {
+    padding: 4rem 1.5rem 5.5rem;
+  }
+  .products-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.8rem;
+  }
+  .products-headline {
+    font-size: clamp(2.1rem, 7.5vw, 2.8rem);
+  }
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+  .product-card:last-child {
+    grid-column: span 1;
+  }
+  .product-card-body {
+    padding: 1.8rem 1.5rem 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-init {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .product-card-img {
+    transition: none !important;
+  }
+  .product-card:hover {
+    transform: none !important;
+  }
+}
