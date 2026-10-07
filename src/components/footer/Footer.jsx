@@ -57,9 +57,8 @@ export default function Footer() {
               loading="lazy"
               decoding="async"
             />
-            <div className="ai-image-badge" aria-hidden="true">
-              <span className="badge-dot" />
-              <span>KI-generiertes Bild</span>
+            <div className="ai-discreet-badge" aria-hidden="true">
+              <span>KI-generiert</span>
             </div>
           </div>
         </div>

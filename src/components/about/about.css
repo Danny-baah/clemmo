@@ -309,12 +309,10 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.capability-thumbnail-wrapper .ai-image-badge {
+.capability-thumbnail-wrapper .ai-image-badge,
+.capability-thumbnail-wrapper .ai-discreet-badge {
   bottom: 0.75rem;
   right: 0.75rem;
-  font-size: 0.65rem;
-  padding: 0.35rem 0.75rem;
-  gap: 0.45rem;
 }
 
 .capability-thumbnail-wrapper:hover {

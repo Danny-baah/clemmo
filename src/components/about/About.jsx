@@ -145,9 +145,10 @@ export default function About() {
                 className="about-model-image"
                 loading="lazy"
               />
-              <div className="ai-image-badge" aria-hidden="true">
+              <div className="image-badge-with-ai" aria-hidden="true">
                 <span className="badge-dot" />
-                <span>KI-generiertes Bild</span>
+                <span className="badge-main-text">MASSGESCHNEIDERTES CLEMMO MODELL</span>
+                <span className="badge-ai-notice">KI-generiert</span>
               </div>
             </div>
           </div>
@@ -172,9 +173,8 @@ export default function About() {
                     className="capability-thumbnail"
                     loading="lazy"
                   />
-                  <div className="ai-image-badge" aria-hidden="true">
-                    <span className="badge-dot" />
-                    <span>KI-generiertes Bild</span>
+                  <div className="ai-discreet-badge" aria-hidden="true">
+                    <span>KI-generiert</span>
                   </div>
                 </div>
               </div>
