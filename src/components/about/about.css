@@ -358,4 +358,12 @@
     grid-template-columns: 1fr;
     gap: 2.2rem;
   }
+
+  .about-image-badge {
+    bottom: 0.85rem;
+    right: 0.85rem;
+    font-size: 0.65rem;
+    padding: 0.42rem 0.85rem;
+    letter-spacing: 0.08em;
+  }
 }
